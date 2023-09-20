@@ -1,0 +1,397 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D8D4916D-2C34-49EC-9516-54F540C8709B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>ProjeEtkinlik</RootNamespace>
+    <AssemblyName>ProjeEtkinlik</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdminDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminDashboard.Designer.cs">
+      <DependentUpon>AdminDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminGirişi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminGirişi.Designer.cs">
+      <DependentUpon>AdminGirişi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AçılışEkranı.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AçılışEkranı.Designer.cs">
+      <DependentUpon>AçılışEkranı.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EtkinlikProjesiDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EtkinlikProjesiDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="EtkinlikProjesiDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EtkinlikProjesiDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="EtkinlikProjesiDataSet101.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EtkinlikProjesiDataSet101.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="EtkinlikProjesiDataSet111.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EtkinlikProjesiDataSet111.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="EtkinlikProjesiDataSet12.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EtkinlikProjesiDataSet12.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="EtkinlikProjesiDataSet13.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EtkinlikProjesiDataSet13.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="EtkinlikProjesiDataSet14.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EtkinlikProjesiDataSet14.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="EtkinlikProjesiDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EtkinlikProjesiDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="EtkinlikProjesiDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EtkinlikProjesiDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="EtkinlikProjesiDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EtkinlikProjesiDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="EtkinlikProjesiDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EtkinlikProjesiDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="EtkinlikProjesiDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EtkinlikProjesiDataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="EtkinlikProjesiDataSet7.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EtkinlikProjesiDataSet7.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="EtkinlikProjesiDataSet8.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EtkinlikProjesiDataSet8.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="EtkinlikProjesiDataSet9.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EtkinlikProjesiDataSet9.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Sepet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sepet.Designer.cs">
+      <DependentUpon>Sepet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SepeteEklendiMessageBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SepeteEklendiMessageBox.Designer.cs">
+      <DependentUpon>SepeteEklendiMessageBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ÜyeAnaSayfa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ÜyeAnaSayfa.Designer.cs">
+      <DependentUpon>ÜyeAnaSayfa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ÜyeGirişi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ÜyeGirişi.Designer.cs">
+      <DependentUpon>ÜyeGirişi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ÜyeKayıtBaşarılıMessageBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ÜyeKayıtBaşarılıMessageBox.Designer.cs">
+      <DependentUpon>ÜyeKayıtBaşarılıMessageBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ÜyeKayıtOl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ÜyeKayıtOl.Designer.cs">
+      <DependentUpon>ÜyeKayıtOl.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AdminDashboard.resx">
+      <DependentUpon>AdminDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminGirişi.resx">
+      <DependentUpon>AdminGirişi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AçılışEkranı.resx">
+      <DependentUpon>AçılışEkranı.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Sepet.resx">
+      <DependentUpon>Sepet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SepeteEklendiMessageBox.resx">
+      <DependentUpon>SepeteEklendiMessageBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ÜyeAnaSayfa.resx">
+      <DependentUpon>ÜyeAnaSayfa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ÜyeGirişi.resx">
+      <DependentUpon>ÜyeGirişi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ÜyeKayıtBaşarılıMessageBox.resx">
+      <DependentUpon>ÜyeKayıtBaşarılıMessageBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ÜyeKayıtOl.resx">
+      <DependentUpon>ÜyeKayıtOl.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="EtkinlikProjesiDataSet.xsc">
+      <DependentUpon>EtkinlikProjesiDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="EtkinlikProjesiDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>EtkinlikProjesiDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="EtkinlikProjesiDataSet.xss">
+      <DependentUpon>EtkinlikProjesiDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="EtkinlikProjesiDataSet1.xsc">
+      <DependentUpon>EtkinlikProjesiDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="EtkinlikProjesiDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>EtkinlikProjesiDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="EtkinlikProjesiDataSet1.xss">
+      <DependentUpon>EtkinlikProjesiDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="EtkinlikProjesiDataSet101.xsc">
+      <DependentUpon>EtkinlikProjesiDataSet101.xsd</DependentUpon>
+    </None>
+    <None Include="EtkinlikProjesiDataSet101.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>EtkinlikProjesiDataSet101.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="EtkinlikProjesiDataSet101.xss">
+      <DependentUpon>EtkinlikProjesiDataSet101.xsd</DependentUpon>
+    </None>
+    <None Include="EtkinlikProjesiDataSet111.xsc">
+      <DependentUpon>EtkinlikProjesiDataSet111.xsd</DependentUpon>
+    </None>
+    <None Include="EtkinlikProjesiDataSet111.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>EtkinlikProjesiDataSet111.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="EtkinlikProjesiDataSet111.xss">
+      <DependentUpon>EtkinlikProjesiDataSet111.xsd</DependentUpon>
+    </None>
+    <None Include="EtkinlikProjesiDataSet12.xsc">
+      <DependentUpon>EtkinlikProjesiDataSet12.xsd</DependentUpon>
+    </None>
+    <None Include="EtkinlikProjesiDataSet12.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>EtkinlikProjesiDataSet12.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="EtkinlikProjesiDataSet12.xss">
+      <DependentUpon>EtkinlikProjesiDataSet12.xsd</DependentUpon>
+    </None>
+    <None Include="EtkinlikProjesiDataSet13.xsc">
+      <DependentUpon>EtkinlikProjesiDataSet13.xsd</DependentUpon>
+    </None>
+    <None Include="EtkinlikProjesiDataSet13.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>EtkinlikProjesiDataSet13.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="EtkinlikProjesiDataSet13.xss">
+      <DependentUpon>EtkinlikProjesiDataSet13.xsd</DependentUpon>
+    </None>
+    <None Include="EtkinlikProjesiDataSet14.xsc">
+      <DependentUpon>EtkinlikProjesiDataSet14.xsd</DependentUpon>
+    </None>
+    <None Include="EtkinlikProjesiDataSet14.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>EtkinlikProjesiDataSet14.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="EtkinlikProjesiDataSet14.xss">
+      <DependentUpon>EtkinlikProjesiDataSet14.xsd</DependentUpon>
+    </None>
+    <None Include="EtkinlikProjesiDataSet2.xsc">
+      <DependentUpon>EtkinlikProjesiDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="EtkinlikProjesiDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>EtkinlikProjesiDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="EtkinlikProjesiDataSet2.xss">
+      <DependentUpon>EtkinlikProjesiDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="EtkinlikProjesiDataSet3.xsc">
+      <DependentUpon>EtkinlikProjesiDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="EtkinlikProjesiDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>EtkinlikProjesiDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="EtkinlikProjesiDataSet3.xss">
+      <DependentUpon>EtkinlikProjesiDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="EtkinlikProjesiDataSet4.xsc">
+      <DependentUpon>EtkinlikProjesiDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="EtkinlikProjesiDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>EtkinlikProjesiDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="EtkinlikProjesiDataSet4.xss">
+      <DependentUpon>EtkinlikProjesiDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="EtkinlikProjesiDataSet5.xsc">
+      <DependentUpon>EtkinlikProjesiDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="EtkinlikProjesiDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>EtkinlikProjesiDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="EtkinlikProjesiDataSet5.xss">
+      <DependentUpon>EtkinlikProjesiDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="EtkinlikProjesiDataSet6.xsc">
+      <DependentUpon>EtkinlikProjesiDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="EtkinlikProjesiDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>EtkinlikProjesiDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="EtkinlikProjesiDataSet6.xss">
+      <DependentUpon>EtkinlikProjesiDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="EtkinlikProjesiDataSet7.xsc">
+      <DependentUpon>EtkinlikProjesiDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="EtkinlikProjesiDataSet7.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>EtkinlikProjesiDataSet7.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="EtkinlikProjesiDataSet7.xss">
+      <DependentUpon>EtkinlikProjesiDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="EtkinlikProjesiDataSet8.xsc">
+      <DependentUpon>EtkinlikProjesiDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="EtkinlikProjesiDataSet8.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>EtkinlikProjesiDataSet8.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="EtkinlikProjesiDataSet8.xss">
+      <DependentUpon>EtkinlikProjesiDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="EtkinlikProjesiDataSet9.xsc">
+      <DependentUpon>EtkinlikProjesiDataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="EtkinlikProjesiDataSet9.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>EtkinlikProjesiDataSet9.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="EtkinlikProjesiDataSet9.xss">
+      <DependentUpon>EtkinlikProjesiDataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
